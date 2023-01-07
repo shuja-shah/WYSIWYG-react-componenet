@@ -1,0 +1,51 @@
+@import url("../../Styles/helper.css");
+/* */
+.editor {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  cursor: text;
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 8px -3px #ababab;
+  background: var(--grey-300);
+  width: 98%;
+  padding: 16px;
+  margin: auto !important;
+}
+
+.editor :global(.public-DraftEditor-content) {
+  min-height: 140px;
+}
+
+.headlineButtonWrapper {
+  display: inline-block;
+}
+
+.headlineButton {
+  background: #fbfbfb;
+  color: #888;
+  font-size: 18px;
+  border: 0;
+  padding-top: 5px;
+  vertical-align: bottom;
+  height: 34px;
+  width: 36px;
+}
+
+.headlineButton:hover,
+.headlineButton:focus {
+  background: #f3f3f3;
+}
+.editor .DraftEditor-root {
+  position: relative !important;
+  height: 60px !important;
+  overflow-y: auto !important;
+  margin-bottom: 10px !important;
+}
+.toolbar {
+  display: flex;
+  column-gap: 10px;
+}
+.toolbar button {
+  background: transparent;
+  border: none;
+}
